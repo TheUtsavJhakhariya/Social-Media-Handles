@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            max-width: 80rem;
+            padding: 1.5rem;
+        }
+        .card{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-gap: 1.5;
+        }
+        .card{
+            background:#262525;
+            color: #fff;
+            padding: 1.5rem;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .card-title-large{
+            font-family: fantasy, sans-serif;
+            font-size: 10rem;
+            letter-spacing: 0.5rem;
+            color: #1d1d1d;
+            transform: translateX(7rem);
+            transition: transform 2.5s;
+        }
+        .card-title-small{
+            margin-bottom: 1rem;
+            font-weight: 1000;
+            font-size: 60px;
+        }
+        .card-description{
+            font-size: 1.4rem;
+            line-height: 1.5;
+        }
+        .card-cta{
+            display: inline-block;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin-left: auto;
+        }
+        .card:hover .card-cta{
+            background-color: #262525;
+        }
+        .card:hover .card-title-large{
+            transform: translateX(65%);
+            color: rgba(255, 255, 255, 0.349);
+        }
+        .card.twitter:hover{
+            background-color: #1da1f2;
+        }
+        .card.instagram:hover{
+            background: radial-gradient(at 20% 128%, #feda78 20%, #e23467 60%, #ac2bb3 90%);
+        }
+        .card.facebook:hover{
+            background-color: #4267b2;
+        }
+        .card.youtube:hover{
+            background-color: #ff074f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card twitter">
+                <h2 class="card-title-large">Twitter</h2>
+                <h3 class="card-title-small">Twitter</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae libero sed ante eleifend venenatis at a leo. Maecenas in ligula lorem. Vivamus fringilla tellus eget est dapibus, vel posuere libero ultrices. Duis euismod felis vel finibus finibus. Nam euismod dui vel convallis ullamcorper. Suspendisse lobortis, nibh quis lobortis hendrerit, tortor nisi aliquet turpis, eget pulvinar nulla felis vel velit. Ut bibendum enim non magna ultrices mollis.</p>
+                <a href="#" class="card-cta">&rarr;</a>
+            </div>
+            <div class="card instagram">
+                <h2 class="card-title-large">Instagram</h2>
+                <h3 class="card-title-small">Instagram</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae libero sed ante eleifend venenatis at a leo. Maecenas in ligula lorem. Vivamus fringilla tellus eget est dapibus, vel posuere libero ultrices. Duis euismod felis vel finibus finibus. Nam euismod dui vel convallis ullamcorper. Suspendisse lobortis, nibh quis lobortis hendrerit, tortor nisi aliquet turpis, eget pulvinar nulla felis vel velit. Ut bibendum enim non magna ultrices mollis.</p>
+                <a href="#" class="card-cta">&rarr;</a>
+            </div>
+            <div class="card facebook">
+                <h2 class="card-title-large">Facebook</h2>
+                <h3 class="card-title-small">Facebook</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae libero sed ante eleifend venenatis at a leo. Maecenas in ligula lorem. Vivamus fringilla tellus eget est dapibus, vel posuere libero ultrices. Duis euismod felis vel finibus finibus. Nam euismod dui vel convallis ullamcorper. Suspendisse lobortis, nibh quis lobortis hendrerit, tortor nisi aliquet turpis, eget pulvinar nulla felis vel velit. Ut bibendum enim non magna ultrices mollis.</p>
+                <a href="#" class="card-cta">&rarr;</a>
+            </div>
+            <div class="card youtube">
+                <h2 class="card-title-large">Youtube</h2>
+                <h3 class="card-title-small">Youtube</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae libero sed ante eleifend venenatis at a leo. Maecenas in ligula lorem. Vivamus fringilla tellus eget est dapibus, vel posuere libero ultrices. Duis euismod felis vel finibus finibus. Nam euismod dui vel convallis ullamcorper. Suspendisse lobortis, nibh quis lobortis hendrerit, tortor nisi aliquet turpis, eget pulvinar nulla felis vel velit. Ut bibendum enim non magna ultrices mollis.</p>
+                <a href="#" class="card-cta">&rarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
